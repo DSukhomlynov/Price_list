@@ -1,0 +1,393 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 2. v2.0 | 20110126
+  License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*
+  ========================================
+  Элементы
+  ========================================
+*/
+
+h1, h2, h3, h4 {
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    color: #000000;
+}
+
+h1 {
+    font-size: 2.25em;
+    line-height: 44px;
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 1.5em;
+    line-height: 27px;
+    font-weight: bold
+}
+
+h3 {
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: bold
+}
+
+h4 {
+    font-size: 0.69em;
+    font-weight: 600;
+}
+
+/*
+  ========================================
+  Пользовательские стили
+  ========================================
+*/
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    overflow-y: scroll;
+    overflow-x: hidden;  /*для горизонтального*/
+}
+
+body {
+
+    font-family: Tahoma, Verdana, Arial, Helvetica, Mistral, Trebuchet MS, Courier New, Impact, Monotype Corsiva sans-serif;
+}
+
+#page {
+    display: flex;
+}
+
+/*
+  ========================================
+  Основной блок
+  ========================================
+*/
+
+#main {
+    /* Это свойство позволяет данному блоку растягиваться и занимать всё доступное пространство, не затрагивая сайдбар */
+    flex-grow: 1;
+    min-height: 100vh;
+    background-color: #5E42A6;
+    background-image: url("/template/images/1.png");
+
+}
+
+.alignment {
+    display: block;
+    position: absolute;
+    top: 31%;
+    left:31%;
+    height: 400px;
+    margin-top: -50px;
+}
+
+.config1 {
+    display: none;
+    width: 500px;
+    height: 70px;
+    color: #fff;
+    font: 18px Arial, sans-serif;
+    padding: 34px 0 0 266px;
+
+    text-align: center;
+    font-size: 5.5em;
+    line-height: 27px;
+    font-weight: bold;
+}
+
+.config11 {
+    display: none;
+    width: 900px;
+    height: 70px;
+    color: #FF2F24;
+    font: 18px Arial, sans-serif;
+    padding: 34px 0 0 66px;
+
+    text-align: center;
+    font-size: 5.5em;
+    line-height: 27px;
+    font-weight: bold;
+}
+
+.config2 {
+    color: #AEA6D5;
+    font: bold italic 110% serif;
+    padding: 84px 0 20px 0;
+    font-size: 2.3em;
+    line-height: 27px;
+    font-weight: bold;
+
+}
+
+.config3 {
+    display: none;
+    color: #FFFFEE;
+    font: bold italic 110% serif;
+    padding: 84px 0 0 330px;
+    font-size: 2em;
+    line-height: 27px;
+    font-weight: bold;
+}
+
+/*
+  ========================================
+  Сайдбар
+  ========================================
+*/
+
+aside {
+    /* Здесь задаем ширину сайдбара по умолчанию и не даем ему сужаться*/
+    flex-shrink: 0;
+    width: 312px;
+    background-color: #312450;
+    float: left;
+}
+
+aside ul {
+    padding: 150px 0 0 0;
+    font: bold italic 110% serif;
+    font-size: 2.5em;
+    line-height: 75px;
+    font-weight: bold;
+}
+
+aside ul li {
+    margin-top: 100px;
+}
+
+.active {
+    text-decoration: none;
+    color: #776F8C;
+    z-index: 1;
+
+}
+
+.activefix {
+    text-decoration: none;
+    color: #FFF;
+    z-index: 1;
+}
+
+/*
+  ========================================
+  Шапка
+  ========================================
+*/
+
+.logo {
+    display: none;
+    width: 100%;
+    height: 120px;
+    background: url(/template/images/4.JPG) no-repeat;
+    background-size: 100%;
+
+    color: #fff;
+    text-align: center;
+    font-size: 5.5em;
+    line-height: 27px;
+    font-weight: bold;
+
+    padding-top: 40px;
+}
+
+#main h2 {
+    padding: 10px 0 0 0;
+    text-align: center;
+    color: #AEA6D5;
+    padding: 10px;
+}
+
+/*
+  ========================================
+  Записи
+  ========================================
+*/
+
+#recordings {
+    display: none;
+    margin-top: 20px;
+}
+
+#show3 {
+    display: none;
+}
+
+#show4 {
+    display: none;
+}
+
+.entry {
+    display: block;
+    position: relative;
+    width: 50%;
+    left: 25%;
+    top: 10%;
+    border: 4px groove;
+    padding: 10px;
+    min-width: 600px;
+}
+
+.entry2 {
+    display: block;
+    position: relative;
+    width: 50%;
+    left: 25%;
+    top: 10%;
+    border: 4px groove;
+    padding: 10px;
+    min-width: 600px;
+    background-color: darkgoldenrod;
+}
+
+.authorEntry {
+    display: inline;
+    color: #AEA6D5;
+}
+
+.dateEntry {
+    float: right;
+    color: #AEA6D5;
+}
+
+.textEntry {
+    padding: 10px;
+    color: #DAC9C5;
+    border: 2px ridge;
+    background-color: #5E42A6;
+    font: bold italic 110% serif;
+    text-overflow: clip;
+}
+
+.commentsEntry {
+    display: inline;
+    color: #AEA6D5;
+}
+
+.fullEntry {
+    color: #FFE;
+    float: right;
+    text-decoration: none;
+}
+
+.fullEntry:hover {
+    color: #FF2F24;
+}
+
+.backToForum {
+    color: #FFE;
+    float: right;
+    text-decoration: none;
+}
+
+.backToForum:hover {
+    color: #FF2F24;
+}
+
+/*
+  ========================================
+  Таблица
+  ========================================
+*/
+
+body {
+    text-align: center;
+    font-family: sans-serif;
+    background-size: cover;
+    height: 100vh;
+    color: #fff;
+
+}
+.table-wrap {
+    text-align: center;
+    display: inline-block;
+    background-color:#5E42A6;
+    padding: 2rem 2rem;
+    color: #fff;
+}
+
+table {
+    border: 1px solid #ccc;
+    width: 100%;
+    margin:0;
+    padding:0;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+table tr {
+    border: 1px solid #ddd;
+    padding: 5px;
+}
+
+table th, table td {
+    padding: 10px;
+    text-align: center;
+    border-right: 1px solid #ddd;
+}
+
+table th {
+    color: #fff;
+    background-color: #444;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
