@@ -3,7 +3,7 @@
 <head>
 
 	<meta charset="utf-8"/>
-	<title>Blog</title>
+	<title>Price list</title>
 	<link href="/template/css/style.css" rel="stylesheet" type="text/css"/>
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js"></script>
 	<script src="/template/js/jquery.textillate.js"></script>

@@ -11,7 +11,7 @@
     </aside>
 
     <div id="main">
-        <p class="logo" id="logotip">Testing work</p>
+        <p class="logo" id="logotip">Price list</p>
 
         <div id="show3">
             <h2>Результаты для даты ниже 25.11.2017</h2>
